@@ -6,10 +6,10 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Primary
-@Profile({"en","default"})
-public class PrimaryGreetingServiceImpl implements GreetingService {
+@Profile("de")
+public class PrimaryGermanGreetingServiceImpl implements GreetingService {
 
-	public static final String HELLO_GURUS = "Hello Gurus!! I'm injected from Primary Service";
+	public static final String HELLO_GURUS = "Hallo Gurus !! Ich bin vom Primärdienst eingespritzt";
 	@Override
 	public String sayHello() {
 		// TODO Auto-generated method stub
