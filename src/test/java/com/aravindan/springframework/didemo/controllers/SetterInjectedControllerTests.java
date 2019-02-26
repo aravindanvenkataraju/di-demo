@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.aravindan.springframework.didemo.services.GreetingServiceImpl;
+import com.aravindan.springframework.services.GreetingServiceImpl;
 
 public class SetterInjectedControllerTests {
 	

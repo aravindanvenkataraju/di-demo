@@ -1,4 +1,4 @@
-package com.aravindan.springframework.didemo.services;
+package com.aravindan.springframework.services;
 
 public interface GreetingService {
 	

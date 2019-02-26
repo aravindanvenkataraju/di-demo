@@ -3,7 +3,7 @@ package com.aravindan.springframework.didemo.controllers;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
-import com.aravindan.springframework.didemo.services.GreetingService;
+import com.aravindan.springframework.services.GreetingService;
 @Controller
 public class ConstructorInjectedController {
 	
