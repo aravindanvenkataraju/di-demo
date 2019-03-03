@@ -16,11 +16,15 @@ public class DiDemoApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext ctx =  SpringApplication.run(DiDemoApplication.class, args);
-		MyController controller = ctx.getBean(MyController.class, "myController");
-		controller.hello();
-		System.out.println(ctx.getBean(PropertyInjectedController.class).sayHello());
-		System.out.println(ctx.getBean(SetterInjectedController.class).sayHello());
-		System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
+//		MyController controller = ctx.getBean(MyController.class, "myController");
+//		controller.hello();
+//		System.out.println(ctx.getBean(PropertyInjectedController.class).sayHello());
+//		System.out.println(ctx.getBean(SetterInjectedController.class).sayHello());
+//		System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
+		
+		
+		DiDemoDataSource diDemoDataSource = ctx.getBean(DiDemoDataSource.class);
+		System.out.println("username from properties: "+diDemoDataSource.getUser());
 	}
 
 }
