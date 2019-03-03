@@ -25,6 +25,9 @@ public class DiDemoApplication {
 		
 		DiDemoDataSource diDemoDataSource = ctx.getBean(DiDemoDataSource.class);
 		System.out.println("username from properties: "+diDemoDataSource.getUser());
+		
+		DiDemoJmsBroker diDemoJmsBroker = ctx.getBean(DiDemoJmsBroker.class);
+		System.out.println("JMS username from properties: "+diDemoJmsBroker.getUser());
 	}
 
 }
